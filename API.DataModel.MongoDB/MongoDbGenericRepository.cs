@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace API.DataModel.MongoDB
 {
-  public class MongoDbGenericRepository<TEntity> : IGenericRepository<TEntity>
+  public class MongoDbGenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
   {
     private IMongoDatabase _database;
     private string _tableName;

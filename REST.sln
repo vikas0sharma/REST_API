@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DataModel.MongoDB", "AP
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{A964D4F0-D49E-4076-AF43-AAE088B0CC03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Entities", "API.Entities\API.Entities.csproj", "{1B74735F-CDD9-4905-A14E-A67B2777AAA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DataModel.EFRepository", "API.DataModel.EFRepository\API.DataModel.EFRepository.csproj", "{F129E711-BF57-4DB5-A81B-D7686E5196CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{A964D4F0-D49E-4076-AF43-AAE088B0CC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A964D4F0-D49E-4076-AF43-AAE088B0CC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A964D4F0-D49E-4076-AF43-AAE088B0CC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B74735F-CDD9-4905-A14E-A67B2777AAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B74735F-CDD9-4905-A14E-A67B2777AAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B74735F-CDD9-4905-A14E-A67B2777AAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B74735F-CDD9-4905-A14E-A67B2777AAA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F129E711-BF57-4DB5-A81B-D7686E5196CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F129E711-BF57-4DB5-A81B-D7686E5196CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F129E711-BF57-4DB5-A81B-D7686E5196CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F129E711-BF57-4DB5-A81B-D7686E5196CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace API.DataModel
 {
-  public interface IGenericRepository<TEntity>
+  public interface IGenericRepository<TEntity> where TEntity : class
   {
     TEntity GetByID(object id);
     IEnumerable<TEntity> Get();

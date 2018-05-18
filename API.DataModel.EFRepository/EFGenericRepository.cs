@@ -1,37 +1,48 @@
-﻿using API.DataModel;
-using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace API.DataModel.EFRepository
 {
-  public class EFGenericRepository<TEntity> : IGenericRepository<TEntity>
+  public class EFGenericRepository<TEntity> : IGenericRepository<TEntity> where TEntity : class
   {
+    private StudentsManagementContext _context;
+    private DbSet<TEntity> _dbSet;
+    public EFGenericRepository(StudentsManagementContext context)
+    {
+      _context = context;
+      _dbSet = _context.Set<TEntity>();
+    }
     public void Add(TEntity entity)
     {
-      throw new NotImplementedException();
+      _dbSet.Add(entity);
     }
 
     public void Delete(object id)
     {
-      throw new NotImplementedException();
+      TEntity entityToDelete = _dbSet.Find(id);
+      if (_context.Entry(entityToDelete).State == EntityState.Detached)
+      {
+        _dbSet.Attach(entityToDelete);
+      }
+      _dbSet.Remove(entityToDelete);
     }
 
     public IEnumerable<TEntity> Get()
     {
-      throw new NotImplementedException();
+      IQueryable<TEntity> query = _dbSet;
+      return query.ToList();
     }
 
     public TEntity GetByID(object id)
     {
-      throw new NotImplementedException();
+      return _dbSet.Find(id);
     }
 
     public void Update(TEntity entity)
     {
-      throw new NotImplementedException();
+      _dbSet.Attach(entity);
+      _context.Entry(entity).State = EntityState.Modified;
     }
   }
 }
