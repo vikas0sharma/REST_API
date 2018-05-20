@@ -1,4 +1,7 @@
 ﻿using API.DataModel;
+using AutoMapper;
+using API.Entities;
+using Dto = API.DTO.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,32 +17,32 @@ namespace API.Services
     {
       _unitOfWork = unitOfWork;
     }
-    public DTO.Models.Student GetStudentById(int id)
+    public Dto.Student GetStudentById(int id)
     {
       var student = _unitOfWork.StudentRepository.GetByID(id);
       if(student != null)
       {
-
+        return Mapper.Map<Student, Dto.Student>(student);
       }
       return null;
     }
 
-    public IEnumerable<DTO.Models.Student> GetAllStudents()
+    public IEnumerable<Dto.Student> GetAllStudents()
     {
       throw new NotImplementedException();
     }
 
-    public int CreateStudent(DTO.Models.Student student)
+    public int CreateStudent(Dto.Student student)
     {
       throw new NotImplementedException();
     }
 
-    public bool UpdateStudent(DTO.Models.Student student)
+    public bool UpdateStudent(Dto.Student student)
     {
       throw new NotImplementedException();
     }
 
-    public bool DeleteStudent(DTO.Models.Student student)
+    public bool DeleteStudent(Dto.Student student)
     {
       throw new NotImplementedException();
     }
