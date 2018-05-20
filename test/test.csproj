@@ -37,6 +37,14 @@
       <HintPath>..\packages\DnsClient.1.0.7\lib\net45\DnsClient.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="MongoDB.Bson, Version=2.6.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MongoDB.Bson.2.6.0\lib\net45\MongoDB.Bson.dll</HintPath>
       <Private>True</Private>
@@ -54,6 +62,7 @@
       <HintPath>..\packages\System.Buffers.4.3.0\lib\netstandard1.1\System.Buffers.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
@@ -75,9 +84,21 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\API.DataModel.EFRepository\API.DataModel.EFRepository.csproj">
+      <Project>{f129e711-bf57-4db5-a81b-d7686e5196ce}</Project>
+      <Name>API.DataModel.EFRepository</Name>
+    </ProjectReference>
     <ProjectReference Include="..\API.DataModel.MongoDB\API.DataModel.MongoDB.csproj">
       <Project>{0D8F07FF-3858-4E0D-87A2-BD35DED5BA22}</Project>
       <Name>API.DataModel.MongoDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\API.DataModel\API.DataModel.csproj">
+      <Project>{039bdb8f-7ca8-4b1e-b366-10006b40db0a}</Project>
+      <Name>API.DataModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\API.Entities\API.Entities.csproj">
+      <Project>{1b74735f-cdd9-4905-a14e-a67b2777aaa5}</Project>
+      <Name>API.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
