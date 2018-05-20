@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DataModel", "API.DataModel\API.DataModel.csproj", "{039BDB8F-7CA8-4B1E-B366-10006B40DB0A}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Entities", "API.Entities\API.Entities.csproj", "{1B74735F-CDD9-4905-A14E-A67B2777AAA5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DataModel.EFRepository", "API.DataModel.EFRepository\API.DataModel.EFRepository.csproj", "{F129E711-BF57-4DB5-A81B-D7686E5196CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DTO.Models", "API.DTO.Models\API.DTO.Models.csproj", "{A444B773-DA87-44DD-A2B1-BBFF4C26892C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Services", "API.Services\API.Services.csproj", "{95836D94-BA49-4F9C-9382-D680B39BCABB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{F129E711-BF57-4DB5-A81B-D7686E5196CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F129E711-BF57-4DB5-A81B-D7686E5196CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F129E711-BF57-4DB5-A81B-D7686E5196CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A444B773-DA87-44DD-A2B1-BBFF4C26892C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A444B773-DA87-44DD-A2B1-BBFF4C26892C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A444B773-DA87-44DD-A2B1-BBFF4C26892C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A444B773-DA87-44DD-A2B1-BBFF4C26892C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95836D94-BA49-4F9C-9382-D680B39BCABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95836D94-BA49-4F9C-9382-D680B39BCABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95836D94-BA49-4F9C-9382-D680B39BCABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95836D94-BA49-4F9C-9382-D680B39BCABB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
