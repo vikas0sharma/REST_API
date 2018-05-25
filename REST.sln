@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DataModel", "API.DataModel\API.DataModel.csproj", "{039BDB8F-7CA8-4B1E-B366-10006B40DB0A}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.DTO.Models", "API.DTO.Models\API.DTO.Models.csproj", "{A444B773-DA87-44DD-A2B1-BBFF4C26892C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Services", "API.Services\API.Services.csproj", "{95836D94-BA49-4F9C-9382-D680B39BCABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{3E66B11D-B200-4FE9-910A-928D6EAFA7DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{95836D94-BA49-4F9C-9382-D680B39BCABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95836D94-BA49-4F9C-9382-D680B39BCABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95836D94-BA49-4F9C-9382-D680B39BCABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E66B11D-B200-4FE9-910A-928D6EAFA7DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E66B11D-B200-4FE9-910A-928D6EAFA7DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E66B11D-B200-4FE9-910A-928D6EAFA7DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E66B11D-B200-4FE9-910A-928D6EAFA7DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,9 +10,11 @@ namespace API.Services
   public class StudentService : IStudentService
   {
     private readonly IUnitOfWork _unitOfWork;
-    public StudentService(IUnitOfWork unitOfWork)
+    private readonly IDatabaseProvider _databaseProvider;
+    public StudentService(IDatabaseProvider databaseProvider)
     {
-      _unitOfWork = unitOfWork;
+      _databaseProvider = databaseProvider;
+      _unitOfWork = _databaseProvider.GetUnitOfWork();
     }
     public Dto.Student GetStudentById(int id)
     {
